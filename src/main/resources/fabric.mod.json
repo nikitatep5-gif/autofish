@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "autofish",
+  "version": "${version}",
+  "name": "AutoFish",
+  "description": "Automatically reels in and recasts when a fish bites.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.autofish.AutoFishMod"
+    ]
+  },
+  "mixins": [
+    "autofish.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
